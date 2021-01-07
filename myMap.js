@@ -5,7 +5,7 @@ const arr1 = [2, 5, 3, 6, 9];
 console.log("\nmyMap\n")
 
 function double(newArr, value){
-  newArr.push(value*2);
+  newArr[newArr.length] = value * 2;
 }
 
 function myMap(arr, callback){
