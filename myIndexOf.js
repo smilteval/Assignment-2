@@ -5,23 +5,18 @@ const arr1 = [2, 5, 3, 6, 9];
 console.log("\nmySome\n")
 
 function findThree(value){
-  if(value === 3){
-    return true;
-  }
-  else{
-    return false;
-  }
+  
 }
 
-function myIndexOf(arr, callback){
+function myIndexOf(arr){
   let index = -1;
   for(let i = 0; i < arr.length; i++){
-    if(callback(arr[i])){
-        index = i;
-        break;
+    if(arr[i] === 3){
+      index = i;
+      break;
     }
   }
   return index;
 }
 
-console.log(myIndexOf(arr1,findThree))
+console.log(myIndexOf(arr1))
