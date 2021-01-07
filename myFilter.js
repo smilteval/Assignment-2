@@ -6,7 +6,7 @@ console.log("\nmyFilter\n")
 
 function even(newArr, value){
   if(value % 2 === 0){
-    newArr.push(value);
+    newArr[newArr.length] = value;
   }
 }
 
