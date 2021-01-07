@@ -1,11 +1,11 @@
-//checks if at least one element in an array is equal to 6
+//checks if at least one element in an array ends with 'e'
 
-const arr1 = [2, 5, 3, 6, 9];
+const arr2 = ["sun", "smile", "sandals", "smilte"];
 
 console.log("\nmySome\n")
 
-function isSix(value){
-  if(value === 6){
+function endsWithE(value){
+  if(value[value.length-1]=== 'e'){
     return true;
   }
   else{
@@ -24,4 +24,4 @@ function mySome(arr, callback){
   return result;
 }
 
-console.log(mySome(arr1,isSix))
+console.log(mySome(arr2,endsWithE))
