@@ -1,27 +1,18 @@
-//returns an index on an zelement in an array includes 6
+//returns an index of an element in an array 
 
 const arr1 = [2, 5, 3, 6, 9];
 
-console.log("\nmySome\n")
+console.log("\nmyIndexOf\n")
 
-function findSix(value){
-  if(value === 6){
-    return true;
-  }
-  else{
-    return false;
-  }
-}
-
-function myIncludes(arr, callback){
-  let result = false;
+function myIndexOf(arr, value){
+  let index = -1;
   for(let i = 0; i < arr.length; i++){
-    result = callback(arr[i]);
-    if(result){
-        break;
+    if(arr[i]===value){
+      index = i;
+      break;
     }
   }
-  return result;
+  return index;
 }
 
-console.log(myIncludes(arr1,findSix))
+console.log(myIndexOf(arr1, 6))
