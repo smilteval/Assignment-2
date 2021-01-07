@@ -1,27 +1,17 @@
-//checks if an array includes 6
+//checks if an array includes an element
 
 const arr1 = [2, 5, 3, 6, 9];
 
 console.log("\nmyIncludes\n")
 
-function findSix(value){
-  if(value === 6){
-    return true;
-  }
-  else{
-    return false;
-  }
-}
 
-function myIncludes(arr, callback){
-  let result = false;
+function myIncludes(arr, value){
   for(let i = 0; i < arr.length; i++){
-    result = callback(arr[i]);
-    if(result){
-        break;
+    if(arr[i]===value){
+      return true;
     }
   }
-  return result;
+  return false;;
 }
 
-console.log(myIncludes(arr1,findSix))
+console.log(myIncludes(arr1,9))
