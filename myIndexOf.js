@@ -1,22 +1,27 @@
-//returns the first index of 3 in an array
+//returns an index on an zelement in an array includes 6
 
 const arr1 = [2, 5, 3, 6, 9];
 
 console.log("\nmySome\n")
 
-function findThree(value){
-  
+function findSix(value){
+  if(value === 6){
+    return true;
+  }
+  else{
+    return false;
+  }
 }
 
-function myIndexOf(arr){
-  let index = -1;
+function myIncludes(arr, callback){
+  let result = false;
   for(let i = 0; i < arr.length; i++){
-    if(arr[i] === 3){
-      index = i;
-      break;
+    result = callback(arr[i]);
+    if(result){
+        break;
     }
   }
-  return index;
+  return result;
 }
 
-console.log(myIndexOf(arr1))
+console.log(myIncludes(arr1,findSix))

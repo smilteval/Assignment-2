@@ -2,7 +2,7 @@
 
 const arr1 = [2, 5, 3, 6, 9];
 
-console.log("\nmySome\n")
+console.log("\nmyIncludes\n")
 
 function findSix(value){
   if(value === 6){

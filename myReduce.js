@@ -2,7 +2,7 @@
 
 const arr1 = [2, 5, 3, 6, 9];
 
-console.log("myEach\n")
+console.log("myReduce\n")
 
 function sum(arr){
     let sum = 0;
