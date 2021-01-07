@@ -2,7 +2,7 @@
 
 const arr1 = [2, 5, 3, 6, 9];
 
-console.log("\nmySome\n")
+console.log("\nmyIndexOf\n")
 
 function findThree(value){
   if(value === 3){
